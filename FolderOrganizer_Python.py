@@ -30,8 +30,8 @@ def organize_files():
     # Tüm dosya ve klasörlerin taraması
     for root, dirs, files in os.walk(current_directory):
         for filename in files:
-            if filename == "a.py":
-                continue  # a.py dosyasını taşıma, diğer dosyalara devam et
+            if filename == "FolderOrganizer_Python.py":
+                continue  # FolderOrganizer_Python.py dosyasını taşıma, diğer dosyalara devam et
             file_path = os.path.join(root, filename)
             if os.path.exists(file_path):  # Dosyanın varlığını kontrol et
                 file_type, _ = mimetypes.guess_type(file_path)
